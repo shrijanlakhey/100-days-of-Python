@@ -10,12 +10,12 @@ class Food(Turtle): # inheriting from 'Turtle' class
         self.color("red4")
         self.speed("fastest")
         random_x = randint(-280, 280)
-        random_y = randint(-280, 280)
+        random_y = randint(-280, 255)
         self.goto(x=random_x, y=random_y)
         self.refresh()
 
     def refresh(self):
         random_x = randint(-280, 280)
-        random_y = randint(-280, 280)
+        random_y = randint(-280, 255)
         self.goto(x=random_x, y=random_y)
         
