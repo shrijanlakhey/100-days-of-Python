@@ -1,0 +1,2 @@
+New text from write_in_a_file.py
+Appended text from append_in_a_file.py
