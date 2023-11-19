@@ -67,8 +67,6 @@ known_button = Button(image=right_image, bd=0, command=known_words)
 known_button.grid(column=1, row=1)
 
 # calling this method so that the 'Title' and 'Word' will be replaced by 'Korean' and a korean word after all the images, texts and buttons have been created
-# window.after_cancel(id=next_card)
 next_card()
-# window.after(3000, next_card_eng)
 
 window.mainloop()
