@@ -1,0 +1,11 @@
+# To create environment variables
+
+# IN CMD
+# note there shouldn't be space before or after the '=' sign
+export VARIABLE_NAME=value
+eg, API_KEY=61arp2sdwe2op23
+
+# TO ACCESS ENVIRONMENT VARIABLES
+# in python file
+import os
+variable = os.environ.get("API_KEY")
