@@ -57,11 +57,11 @@ playlist = sp.user_playlist_create(
     public=False,
     collaborative=None,
 )
-playlisy_id = playlist["id"]
+playlist_id = playlist["id"]
 
 # adding songs to the playlist
 sp.user_playlist_add_tracks(
     user=user_id,
-    playlist_id=playlisy_id,
+    playlist_id=playlist_id,
     tracks=song_uris,
 )
