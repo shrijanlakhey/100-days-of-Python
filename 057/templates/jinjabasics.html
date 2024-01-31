@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Hello World</h1>
+    <h2>{{ 5*6 }}</h2>
+    <h3>Random number: {{ num }}</h3>
+    <!-- 'url_for()' builds a url for the given method -->
+    <a href="{{ url_for('get_blog')}}">Go to Blog</a><br />
+
+    <!-- adding an keyword arguments as parameters which can be caught in the server side like, @app.route("/blog/<num>") and pass it as an input to the method as well-->
+    <a href="{{ url_for('get_blog', num=3)}}">Go to Blog with parameters</a>
+  </body>
+  <footer>
+    <p>Copyright {{ year }}. created by Shrijan Lakhey using Flask</p>
+  </footer>
+</html>
