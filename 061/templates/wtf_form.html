@@ -1,0 +1,17 @@
+<!-- adding bootstrap at front because we are using flask-bootstrap -->
+{% extends "bootstrap/base.html" %}
+<!-- we can import a form with all the fields specified in the form class with a single line of code -->
+{% import "bootstrap/wtf.html" as wtf %}
+
+{% block content %}
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12 col-md-8">
+                <h1>Login with quick forms</h1>
+                {{ wtf.quick_form(form, novalidate=True) }}
+            </div>
+
+        </div>
+	</div>
+
+{% endblock %}
