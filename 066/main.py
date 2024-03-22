@@ -164,7 +164,7 @@ def delete_cafe(cafe_id):
                         "Not Found": "Sorry a cafe with that id was not found in the database."
                     }
                 ),
-                403,
+                404,
             )
     else:
         return (
